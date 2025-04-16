@@ -23,3 +23,30 @@ ShoppyGlobe is a responsive e-commerce web application built using **React**, **
 - **Styling:** Custom CSS
 - **Routing:** React Router v6
 - **API:** [dummyjson.com/products](https://dummyjson.com/products)
+- **Node.js**
+- **Express.js**
+- **MongoDB + Mongoose**
+- **JWT Authentication**
+- **ThunderClient** for testing
+
+## Auth Routes
+
+POST /auth/register - Register a new user
+POST /auth/login - Login and get JWT token
+
+## Token
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmY0MzhlZjJjZWRmZGYzYmE1NDc0ZCIsImlhdCI6MTc0NDc5OTYyOCwiZXhwIjoxNzQ0ODg2MDI4fQ.XHd5IN3cvXNXfXBMUvKM-hsQgypCixOLJFUWkbEUYjQ
+
+## Product Routes
+
+GET /products - Get all products
+GET /products/:id - Get product by ID
+
+## Cart Routes [Protected by JWT authentication]
+
+Header Authorization JWT <Token>
+POST /cart - Add product to cart
+GET /cart - Get all cart items
+PUT /cart/:id - Update quantity
+DELETE /cart/:id - Remove item from cart
